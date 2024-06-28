@@ -1,2 +1,11 @@
+run = "python3 test.py"
+language = "python3"
+
+entrypoint = "test.py"
+modules = ["python-3.10"]
+
 [nix]
 channel = "stable-23_11"
+
+[deployment]
+run = ["python3", "test.py"]
